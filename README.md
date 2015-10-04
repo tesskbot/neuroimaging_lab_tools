@@ -43,7 +43,7 @@ The data modalities these scripts now collect are:
 
 * **MRI data** calculated by freesurfer (volumes and thicknesses) is extracted from the aseg.stats file by the code in `mri`. Any number of volumes can be extracted by label name. The extraction is done in place - you simply designate the location where MRI data is stored.
 
-* **FDG data** is extracted by the `fdg_metaroi` module. This function is designed to search a parent directory for  FDG data and process all of it.
+* **FDG data** is extracted by the `fdg` module. This function is designed to search a parent directory for FDG data and process all of it.
 
 Each of the modules in `gather` (except the script `gathermany`) contains a function named "*modulename*_run". This function can be called to gather data of that modality. Most other functions within the modules support the "*modulename*_run" function.
 
